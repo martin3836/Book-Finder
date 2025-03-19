@@ -154,7 +154,6 @@ function showBookDetails(book) {
                 
                 <div class="action-buttons">
                     ${previewLink ? `<a href="${previewLink}" target="_blank"><button class="action-button primary-button">Preview Book</button></a>` : ''}
-                    <button class="action-button secondary-button" onclick="addToLibrary('${title.replace(/'/g, "\\'")}')">Add to My Library</button>
                     <button class="action-button secondary-button" onclick="shareBook('${title.replace(/'/g, "\\'")}')">Share</button>
                 </div>
             </div>
@@ -188,9 +187,7 @@ function languageCode(code) {
 }
 
 // Add to library function (placeholder)
-function addToLibrary(title) {
-    alert(`"${title}" has been added to your library.`);
-}
+
 
 // Share book function (placeholder)
 function shareBook(title) {
